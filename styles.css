@@ -1,0 +1,182 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #0f0f0f;
+    color: #fff;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    color: #f1c40f;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+    color: #fff;
+    padding: 150px 20px;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #f1c40f;
+    color: #000;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e67e22;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f1c40f;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature i {
+    font-size: 2rem;
+    color: #f1c40f;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f1c40f;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ccc;
+}
