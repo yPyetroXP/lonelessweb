@@ -180,3 +180,25 @@ footer p {
     font-size: 1rem;
     color: #ccc;
 }
+
+/* Estilo para o grupo de botões */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 20px;
+}
+
+/* Estilo para o botão de vídeo */
+.btn-video {
+    background-color: #e74c3c; /* Vermelho para destacar o botão de vídeo */
+}
+
+.btn-video:hover {
+    background-color: #c0392b; /* Vermelho mais escuro no hover */
+}
+
+/* Ícones dentro dos botões */
+.btn i {
+    margin-right: 8px;
+}
