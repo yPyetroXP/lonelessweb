@@ -1,4 +1,18 @@
-// Exemplo de interação com o formulário de contato
+// Efeito de digitação no título
+const text = "Bem-vindo ao Loneless";
+let index = 0;
+
+function typeEffect() {
+    if (index < text.length) {
+        document.getElementById("typing-effect").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 100);
+    }
+}
+
+typeEffect();
+
+// Validação do formulário de contato
 document.getElementById('contact-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const name = document.getElementById('name').value;
