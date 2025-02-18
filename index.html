@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loneless</title>
+    <title>Loneless - Executor de Roblox</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
     <header>
@@ -20,33 +24,42 @@
                 <li><a href="#contact" data-translate="contact">Contato</a></li>
             </ul>
         </nav>
-        <button id="language-toggle" class="btn">🇺🇸 English</button>
+        <button id="language-toggle">🇺🇸 English</button>
     </header>
 
     <section id="hero">
-        <h2 id="typing-effect">Bem-vindo ao Loneless</h2>
-        <p data-translate="heroText">O executor de Roblox mais confiável e eficiente.</p>
-        <a href="#download" class="btn"><i class="icon-download"></i> <span data-translate="downloadNow">Baixar Agora</span></a>
+        <div class="hero-content">
+            <h2 id="typing-effect"></h2>
+            <p data-translate="heroText">O executor de Roblox mais confiável e eficiente.</p>
+            <a href="download-link" class="btn" download data-translate="downloadNow">
+                <i class="fas fa-download"></i> Baixar Agora
+            </a>
+        </div>
     </section>
 
     <section id="about">
-        <h2 data-translate="about">Sobre</h2>
+        <h2 data-translate="about">Sobre o Loneless</h2>
         <p data-translate="aboutText">Loneless é um executor de scripts para Roblox que oferece suporte a uma variedade de scripts e plugins.</p>
     </section>
 
     <section id="features">
         <h2 data-translate="features">Recursos</h2>
-        <div class="feature">
-            <h3 data-translate="featuresTitle1">Leve e Rápido</h3>
-            <p data-translate="featuresText1">Loneless foi projetado para ser leve e rápido, garantindo uma experiência suave.</p>
-        </div>
-        <div class="feature">
-            <h3 data-translate="featuresTitle2">Suporte a Múltiplos Scripts</h3>
-            <p data-translate="featuresText2">Execute vários scripts simultaneamente sem problemas.</p>
-        </div>
-        <div class="feature">
-            <h3 data-translate="featuresTitle3">Interface Amigável</h3>
-            <p data-translate="featuresText3">Interface intuitiva e fácil de usar, mesmo para iniciantes.</p>
+        <div class="features-grid">
+            <div class="feature">
+                <i class="fas fa-bolt"></i>
+                <h3 data-translate="featuresTitle1">Leve e Rápido</h3>
+                <p data-translate="featuresText1">Loneless foi projetado para ser leve e rápido, garantindo uma experiência suave.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-code"></i>
+                <h3 data-translate="featuresTitle2">Suporte a Múltiplos Scripts</h3>
+                <p data-translate="featuresText2">Execute vários scripts simultaneamente sem problemas.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <h3 data-translate="featuresTitle3">Interface Amigável</h3>
+                <p data-translate="featuresText3">Interface intuitiva e fácil de usar, mesmo para iniciantes.</p>
+            </div>
         </div>
     </section>
 
@@ -54,10 +67,10 @@
         <h2 data-translate="contactTitle">Contato</h2>
         <p data-translate="contactText">Se você tiver alguma dúvida ou precisar de suporte, entre em contato conosco.</p>
         <form id="contact-form">
-            <input type="text" placeholder="Seu Nome">
-            <input type="email" placeholder="Seu Email">
-            <textarea placeholder="Sua Mensagem"></textarea>
-            <button type="submit" data-translate="sendMessage">Enviar Mensagem</button>
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu Email" required>
+            <textarea id="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn" data-translate="sendMessage">Enviar Mensagem</button>
         </form>
     </section>
 
